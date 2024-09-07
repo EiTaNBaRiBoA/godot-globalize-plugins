@@ -1,3 +1,6 @@
+> This addon now has a successor, the [Godot Global Project](https://github.com/dugramen/godot-global-project). It's much more powerful and doesn't require you to install it in every project.
+
+
 This plugin lets you "globalize" plugins. It adds an Editor setting which holds a list of plugin paths. 
 Then, whenever *this* plugin is loaded, *those* plugins are copied into the current project and are enabled.
 
