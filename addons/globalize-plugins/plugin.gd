@@ -86,7 +86,8 @@ func globalize_local_plugins():
 	var rfs := EditorInterface.get_resource_filesystem()
 	await get_tree().process_frame
 	#print('scan 1')
-	rfs.scan()
+	if not rfs.is_scanning():
+		rfs.scan()
 	
 	while rfs.is_scanning():
 		#print('waiting while scanning')
